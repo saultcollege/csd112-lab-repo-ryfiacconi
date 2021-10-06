@@ -35,8 +35,10 @@
             </nav>
             <main>
                 <h1>Welcome to Ryan's Website!</h1>
-                <a target="_blank" href="holeinone.jpg">
-                    <img src="holeinone.jpg" alt="Hole In One Photo" style="width:300px">
+                <a target="_blank" href="images/holeinone.jpg">
+                    <img src="images/holeinone-150.jpg" alt="Hole In One Photo"
+                        sizes="(max-width: 500px) 150px, 300px"
+                        srcset="images/holeinone-150.jpg 150w, images/holeinone-300.jpg 300w">
                 </a>
                 <p>
                     I am 19 years old, born and raised in Sault Ste. Marie, Ontario. This summer I spent most of my free time golfing at Crimson Ridge
@@ -51,11 +53,11 @@
                 <h2>
                     My Favourite MLB Team
                 </h2>
-                <figure><a href="https://www.mlb.com/bluejays">
-                <img src="logo.png">
+                <figure>
+                    <a href="https://www.mlb.com/bluejays"><img src="images/logo.png" width="300"></a>
                 
-                <figcaption><strong>Figure 2. </strong>Toronto Blue Jays logo.</figcaption> </figure>
-                </a>
+                    <figcaption><strong>Figure 2. </strong>Toronto Blue Jays logo.</figcaption> 
+                </figure>
                 <!--Found Me!-->
                 <h3>
                     Favourite Players
@@ -73,7 +75,10 @@
                 Beauty in decay.<br>
                 <cite>by <span class="author">Paul Holmes</span></cite></p>
                 <h3>Public Domain Audiobook</h3>
-                <audio controls><source src="http://www.archive.org/download/rover_01_21_2110_librivox/rover0121_01_various_128kb.mp3"></audio><br>
+                <audio controls>
+                    <source src="http://www.archive.org/download/rover_01_21_2110_librivox/rover0121_01_various_128kb.mp3">
+                    <a href="http://www.archive.org/download/rover_01_21_2110_librivox/rover0121_01_various_128kb.mp3">Download the audiobook</a>
+                </audio><br>
                 <h3>Youtube Video</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhhGfduUeOk" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -87,7 +92,11 @@
                 <p>&copy; 2020 <a href="mailto: 20028282@saultcollege.ca?Subject=Message%20from%20CSD112%20Website">Ryan Fiacconi</a></p>
                 <a href="#top">◤</a>
                 
-                <picture><img src="sc-logo@1.5x.png" srcset="sc-logo@1.5x.png, sc-logo@2x.png 2x" width="70px"></picture>
+                <picture>
+                    <source type="image/svg+xml" srcset="images/sc-logo.svg">
+                    <img src="images/sc-logo.png" 
+                        srcset="images/sc-logo.png, images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x" width="70" alt="Sault College logo">
+                </picture>
                 </footer>
             </main>
         </header>

@@ -35,8 +35,10 @@
             </nav>
             <main>
                 <h1>Welcome to Ryan's Website!</h1>
-                <a target="_blank" href="holeinone.jpg">
-                    <img src="holeinone.jpg" alt="Hole In One Photo" style="width:300px">
+                <a target="_blank" href="images/holeinone.jpg">
+                    <img src="images/holeinone-150.jpg" alt="Hole In One Photo"
+                        sizes="(max-width: 500px) 150px, 300px"
+                        srcset="images/holeinone-150.jpg 150w, images/holeinone-300.jpg 300w">
                 </a>
                 <p>
                     I am 19 years old, born and raised in Sault Ste. Marie, Ontario. This summer I spent most of my free time golfing at Crimson Ridge
@@ -51,12 +53,85 @@
                 <h2>
                     My Favourite MLB Team
                 </h2>
-                <figure><a href="https://www.mlb.com/bluejays">
-                <img src="logo.png">
+                <figure>
+                    <a href="https://www.mlb.com/bluejays"><img src="images/logo.png" width="300"></a>
                 
-                <figcaption><strong>Figure 2. </strong>Toronto Blue Jays logo.</figcaption> </figure>
-                </a>
+                    <figcaption><strong>Figure 2. </strong>Toronto Blue Jays logo.</figcaption> 
+                </figure>
                 <!--Found Me!-->
+                <table>
+                    <tr><th colspan="4">Table 1. Current Courses</th></tr>
+                    <tr>
+                        <th rowspan="2">Term</th>
+                        <th colspan="3">Course</th>
+                    </tr>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Hours/Week</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="6">Fall</th>
+                        <td>CSD105</td>
+                        <td>Python</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CMM115</td>
+                        <td>Communications I</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CSD120</td>
+                        <td>Introduction to Web Development</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CSO104</td>
+                        <td>Introduction to Operating Systems and LAN</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>MTH122</td>
+                        <td>Computer Mathematics</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>TNY130</td>
+                        <td>Technology in Society</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="5">Winter</th>
+                        <td>CSA103</td>
+                        <td>Business Applications I</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CSD102</td>
+                        <td>Programming Using C++</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>CSD212</td>
+                        <td>Web Scripting Languages</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CSO102</td>
+                        <td>Introduction to Linux</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>CST104</td>
+                        <td>PC Hardware and Networking</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total</th>
+                        <td>41</td>
+                    </tr>
+                </table>
                 <h3>
                     Favourite Players
                 </h3>
@@ -73,7 +148,10 @@
                 Beauty in decay.<br>
                 <cite>by <span class="author">Paul Holmes</span></cite></p>
                 <h3>Public Domain Audiobook</h3>
-                <audio controls><source src="http://www.archive.org/download/rover_01_21_2110_librivox/rover0121_01_various_128kb.mp3"></audio><br>
+                <audio controls>
+                    <source src="http://www.archive.org/download/rover_01_21_2110_librivox/rover0121_01_various_128kb.mp3">
+                    <a href="http://www.archive.org/download/rover_01_21_2110_librivox/rover0121_01_various_128kb.mp3">Download the audiobook</a>
+                </audio><br>
                 <h3>Youtube Video</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhhGfduUeOk" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -87,7 +165,11 @@
                 <p>&copy; 2020 <a href="mailto: 20028282@saultcollege.ca?Subject=Message%20from%20CSD112%20Website">Ryan Fiacconi</a></p>
                 <a href="#top">◤</a>
                 
-                <picture><img src="sc-logo@1.5x.png" srcset="sc-logo@1.5x.png, sc-logo@2x.png 2x" width="70px"></picture>
+                <picture>
+                    <source type="image/svg+xml" srcset="images/sc-logo.svg">
+                    <img src="images/sc-logo.png" 
+                        srcset="images/sc-logo.png, images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x" width="70" alt="Sault College logo">
+                </picture>
                 </footer>
             </main>
         </header>

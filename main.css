@@ -1,1 +1,7 @@
-body {background-color: lightcoral;}
+body {background-color: #D4F1F4; max-width: 960px; padding: 1px;  }
+p {color: #05445E; text-align: center;}
+h1 {color: #F652A0;}
+h2 {color: #F652A0;}
+h3 {color: #05445E;}
+a {color: #05445E;}
+li {display: inline; padding: 3px;}
